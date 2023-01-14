@@ -1,0 +1,198 @@
+{
+    "banner": {
+        "builder": true,
+        "no_selection":true,
+        "name": "Banner Section",
+        "content": {
+            "images":{
+                "background_image":{
+                    "size":"1000x562",
+                    "thumb":"100x100"
+                },
+               "hero_image":{
+                    "size":"989x862",
+                    "thumb":"100x100"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text",
+            "button_name" : "text",
+            "button_url" : "text"
+        },
+        "element": {
+            "images":{
+                "background_image":{
+                    "size":"71x186",
+                    "thumb":"90x80"
+                }
+            },
+            "modal": false
+        }
+    },
+    "breadcrumb": {
+        "builder": true,
+        "no_selection":true,
+        "name": "Breadcrumb Section",
+        "content": {
+            "images":{
+                "background_image":{
+                    "size":"1200x590",
+                    "thumb":"100x100"
+                }
+            }
+        }
+    },
+    "predict": {
+        "builder": true,
+        "name": "Predict Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element": {
+            "title": "text",
+            "description": "textarea",
+            "icon": "icon",
+            "button_name": "text",
+            "button_url": "text",
+            "modal": true
+        }
+    },
+
+    "trade": {
+        "builder": true,
+        "name": "Trade Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text",
+            "trade_tab_1": "text",
+            "trade_tab_2": "text"
+        }
+    },
+     "trend": {
+        "builder": true,
+        "name": "Trend Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        }
+    },
+
+    "feature": {
+        "builder": true,
+        "name": "Feature Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element": {
+            "feature_icon": "icon",
+            "title": "text",
+            "short_details": "textarea",
+            "modal": true
+        }
+    },
+
+    "app": {
+        "builder": true,
+        "name": "App Section",
+        "content": {
+            "images":{
+                "background_image":{
+                    "size":"735x640",
+                    "thumb":"100x100"
+                }
+            },
+            "heading": "text",
+            "sub_heading": "text",
+            "first_url": "text",
+            "second_url": "text"
+        }
+    },
+
+    "blog": {
+        "builder": true,
+        "name": "Blog Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element": {
+            "images":{
+                "blog_image_1":{
+                    "size":"728x465",
+                    "thumb":"120x80"
+                }
+            },
+            "title": "text",
+            "description_nic": "textarea-nic",
+            "modal": false
+        }
+    },
+
+    "call": {
+        "builder": true,
+        "no_selection":true,
+        "name": "Call To Action Section",
+        "content": {
+            "heading": "text",
+            "button_name": "text",
+            "button_url": "text"
+        }
+    },
+
+    "subscribe": {
+        "builder": true,
+        "no_selection":true,
+        "name": "Subscribe Section",
+        "content": {
+            "heading": "text"
+        }
+    },
+    "social_icon": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Social Icons",
+        "element": {
+            "social_icon": "icon",
+            "url": "text",
+            "modal": true
+        }
+    },
+    "faqs": {
+        "builder": true,
+        "name": "Faq Section",
+        "content": {
+            "heading": "text",
+            "sub_heading": "text"
+        },
+        "element": {
+            "question": "text",
+            "answers": "textarea",
+            "modal": true
+        }
+    },
+    "footer": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Footer Section",
+        "content": {
+            "heading": "text"
+        },
+        "element": {
+            "menu": "text",
+            "description": "textarea-nic",
+            "modal": false
+        }
+    },
+    "contact_us": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Contact Us",
+        "content": {
+            "email_address": "text",
+            "contact_details": "text",
+            "contact_number": "text"
+        }
+    }
+}

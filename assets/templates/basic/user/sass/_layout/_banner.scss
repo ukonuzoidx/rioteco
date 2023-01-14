@@ -1,0 +1,126 @@
+/*Banner Section Starts Here*/
+.banner-section {
+    padding: 130px 0 60px;
+    overflow: hidden;
+    background-position: bottom center;
+    @include breakpoint(max-lg) {
+        padding: 280px 0 175px;
+    }
+    @include breakpoint(max-md) {
+        padding: 250px 0 140px;
+    }
+}
+.banner-content {
+    max-width: 600px;
+    .banner-title {
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 35px;
+    }
+}
+.banner-wrapper {
+    @extend %flex;
+    align-items: center;
+}
+.banner-thumb {
+    position: relative;
+    padding-left: 30px;
+    width: calc(100% - 600px);
+    img {
+        max-width: 780px;
+    }
+    @include breakpoint(max-lg) {
+        display: none;
+    }
+}
+.marquee-wrapper {
+    padding: 10px;
+    display: flex;
+}
+.banner-anime {
+    position: absolute;
+    img {
+            opacity: 0;
+            @include transition($transition);
+            animation: banner-fadeSm 4s alternate infinite;
+            -webkit-animation: banner-fadeSm 4s alternate infinite;
+            -moz-animation: banner-fadeSm 4s alternate infinite;
+        }
+    &1 {
+        top: 140px;
+        left: 85px;
+        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        img {
+            max-width: 70px;
+        }
+    }
+    &2 {
+        top: 205px;
+        left: 330px;
+        animation-delay: 2s;
+        -webkit-animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        img {
+            max-width: 50px;
+            animation-delay: .5s;
+            -webkit-animation-delay: .5s;
+            -moz-animation-delay: .5s;
+        }
+    }
+    &3 {
+        top: 280px;
+        left: 500px;
+        img {
+            max-width: 60px;
+            animation-delay: 1s;
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+        }
+    }
+    &4 {
+        top: 385px;
+        left: 650px;
+        animation-delay: 1.7s;
+        -webkit-animation-delay: 1.7s;
+        -moz-animation-delay: 1.7s;
+        img {
+            max-width: 60px;
+        }
+    }
+}
+@keyframes banner-fadeSm {
+    0% {
+        opacity: .6;
+        @include transform(translateY(30px));
+    }
+    60% {
+        @include transform(translateY(-15px));
+    }
+    80% {
+        @include transform(translateY(15px));
+    }
+    100% {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+}
+.hero-section {
+    padding: 250px 0 120px;
+    @include breakpoint(max-lg) {
+        padding: 220px 0 100px;
+    }
+    &.contact-hero {
+        padding: 250px 0 240px;
+        @include breakpoint(max-lg) {
+            padding: 180px 0 240px;
+        }
+        @include breakpoint(max-md) {
+            padding: 180px 0 240px;
+        }
+    }
+}

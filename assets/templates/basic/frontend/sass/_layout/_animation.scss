@@ -1,0 +1,48 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+@keyframes bounceIn {
+  0% {
+    @include transform(scale(0));
+  }
+  60% {
+    @include transform(scale(1.4));
+  }
+  90% {
+    @include transform(scale(.7));
+  }
+  100% {
+    @include transform(scale(1));
+  }
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3)translateY(-50%);
+    transform: scale(.3)translateY(-50%)
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(.94);
+    transform: scale(.94);
+  }
+}

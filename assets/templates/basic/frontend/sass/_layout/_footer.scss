@@ -1,0 +1,205 @@
+.footer__widget {
+    .logo {
+        display: block;
+        max-width: 250px;
+        height: 60px;
+        margin-bottom: 30px;
+        @include breakpoint(md) {
+            @include breakpoint(max-lg) {
+                height: 50px;
+            }
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: left center;
+        }
+    }
+    font-size: 14px;
+    p {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .title {
+        margin-bottom: 34px;
+        position: relative;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba($color:$white-color, $alpha:.2);
+    }
+    .widget__links {
+        li {
+            padding: 0;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+            a {
+                text-decoration: none;
+                color: $white-color;
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    content: "\f101";
+                    font-family: "Line Awesome Free";
+                    font-weight: 600;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                &:hover {
+                    padding-left: 25px;
+                    color: $base-color
+                }
+            }
+        }
+    }
+    .useful__links {
+        @extend %flex;
+        li {
+            width: 100%;
+            max-width: 150px;
+            padding: 0;
+            flex-grow: 1;
+            @include breakpoint(lg) {
+                @include breakpoint(max-xxl) {
+                    max-width: 130px;
+                }
+                @include breakpoint(max-xl) {
+                    max-width: 108px;
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: $white-color;
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    content: "\f101";
+                    font-family: "Line Awesome Free";
+                    font-weight: 600;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                &:hover {
+                    padding-left: 25px;
+                    color: $base-color
+                }
+            }
+        }
+    }
+        @include breakpoint(max-lg) {
+            .title {
+                padding-bottom: 20px;
+            }
+        }
+    @include breakpoint(max-md) {
+        .title {
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.footer-top {
+    padding-bottom: 120px;
+    border-bottom: 1px solid rgba($color:$white-color, $alpha:.1);
+}
+.footer__contact__item {
+    @extend %flex;
+    align-items: center;
+    padding: 30px;
+    background: $section-bg;
+    .footer__contact__thumb {
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        @include border-radius(50%);
+        border: 1px solid rgba($color:$white-color, $alpha:.2);
+        font-size: 22px;
+    }
+    height: 100%;
+    .footer__contact__content {
+        padding-left: 20px;
+        width: calc(100% - 50px);
+        .footer__contact__title {
+            margin: 0;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    @include breakpoint(lg) {
+        @include breakpoint(max-xl) {
+            padding: 30px 20px;
+            font-size: 14px;
+            .footer__contact__title {
+                font-size: 18px;
+            }
+        }
+    }
+}
+div[class*="col"] {
+    &:nth-child(2) {
+        .footer__contact__item {
+            background: $base-color;
+            .footer__contact__thumb {
+                border-color: rgba($color:$dark-color, $alpha:.1);
+                color: $dark-color;
+            }
+            .footer__contact__content {
+                .footer__contact__title {
+                    a {
+                        color: $dark-color;
+                    }
+                }
+                span {
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+}
+.footer-middle {
+    margin-top: -60px;
+}
+.footer-bottom {
+    padding: 30px 0;
+    text-align: center;
+}
+.subscribe-form {
+    position: relative;
+    .cmn--btn {
+        position: absolute;
+        height: 46px;
+        width: 46px;
+        padding: 0;
+        line-height: 50px;
+        justify-content: center;
+        right: 2px;
+        top: 2px;
+        @include border-radius(4px);
+    }
+}
+.subscribe--form--control {
+    height: 50px;
+    box-shadow: none;
+    border: 1px solid rgba($color:$white-color, $alpha:.1);
+    background: rgba($color: $white-color, $alpha:.1);
+    font-size: 14px;
+    &:focus {
+        border-color: $base-color;
+        box-shadow: none;
+    }
+    &::placeholder {
+        color: $white-color;
+    }
+}
+.footer-middle-wrapper {
+    @include border-radius(5px);
+    border: 1px solid rgba($color: $white-color, $alpha:.1);
+}
